@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ================= Navbar ================= */
+
+.navbar{
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+
+    background:rgba(0,0,0,.18);
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+    z-index:1000;
+}
+
+/* ================= Logo ================= */
+
+.logo a{
+    text-decoration:none;
+    color:white;
+    font-size:34px;
+    font-weight:700;
+}
+
+/* ================= Menu ================= */
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#4da6ff;
+}
+
+/* ================= Buttons ================= */
+
+.auth-btn{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.login-btn,
+.register-btn,
+.profile-btn{
+
+    border:none;
+    outline:none;
+
+    cursor:pointer;
+
+    padding:12px 28px;
+
+    border-radius:10px;
+
+    font-size:16px;
+    font-weight:600;
+
+    transition:.3s;
+
+    font-family:'Poppins',sans-serif;
+}
+
+/* Login */
+
+.login-btn{
+
+    background:transparent;
+    color:white;
+
+    border:2px solid white;
+}
+
+.login-btn:hover{
+
+    background:white;
+    color:#1577ff;
+
+    transform:translateY(-2px);
+}
+
+/* Register */
+
+.register-btn{
+
+    background:linear-gradient(90deg,#1577ff,#42a5ff);
+    color:white;
+}
+
+.register-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(21,119,255,.35);
+}
+
+/* Profile */
+
+.profile-btn{
+
+    background:#2ecc71;
+    color:white;
+}
+
+/* ================= Menu Icon ================= */
+
+.menu-btn{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:45px;
+    height:45px;
+
+    border:none;
+    border-radius:10px;
+
+    background:rgba(255,255,255,.12);
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.menu-btn:hover{
+
+    background:#1577ff;
+}
+
+/* ================= Mobile ================= */
+
+@media(max-width:992px){
+
+.nav-links{
+    display:none;
+}
+
+.navbar{
+    padding:0 20px;
+}
+
+.logo a{
+    font-size:28px;
+}
+
+.login-btn,
+.register-btn{
+
+    padding:10px 18px;
+}
+}

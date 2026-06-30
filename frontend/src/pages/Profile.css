@@ -1,0 +1,351 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+}
+
+/* ================= Container ================= */
+
+.profile-container{
+    margin-left:290px;
+    margin-top:90px;
+    padding:35px;
+    min-height:100vh;
+    background:#f5f7fb;
+}
+
+/* ================= Card ================= */
+
+.profile-card{
+    max-width:1200px;
+    margin:auto;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+}
+
+/* ================= Header ================= */
+
+.profile-header{
+    background:linear-gradient(135deg,#1565ff,#42a5ff);
+    color:#fff;
+    text-align:center;
+    padding:50px 30px;
+}
+
+/* ================= Image ================= */
+
+.profile-image-wrapper{
+    position:relative;
+    width:170px;
+    height:170px;
+    margin:auto;
+    cursor:pointer;
+}
+
+.profile-image{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #fff;
+}
+
+.default-profile{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    background:#ffffff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border:6px solid #fff;
+}
+
+.default-profile svg{
+    font-size:70px;
+    color:#1565ff;
+}
+
+.camera-icon{
+
+    position:absolute;
+    right:8px;
+    bottom:8px;
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    background:#1565ff;
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:18px;
+
+    border:3px solid white;
+}
+
+.profile-header h1{
+    margin-top:20px;
+    font-size:34px;
+    font-weight:700;
+}
+
+.profile-header p{
+    margin-top:10px;
+    font-size:18px;
+    opacity:.9;
+}
+
+/* ================= Sections ================= */
+
+.profile-section{
+    padding:35px;
+}
+
+.profile-section h2{
+    color:#1565ff;
+    margin-bottom:25px;
+    font-size:28px;
+}
+
+/* ================= Personal Info ================= */
+
+.profile-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.profile-item{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    background:#f8f9fc;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    transition:.3s;
+}
+
+.profile-item:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.profile-item svg{
+
+    font-size:28px;
+
+    color:#1565ff;
+}
+
+.profile-item span{
+
+    color:#888;
+
+    font-size:14px;
+}
+
+.profile-item h4{
+
+    color:#222;
+
+    font-size:18px;
+
+    margin-top:5px;
+}
+
+/* ================= Summary ================= */
+
+.summary-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+}
+
+.summary-card{
+
+    background:linear-gradient(135deg,#1565ff,#42a5ff);
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    transition:.3s;
+}
+
+.summary-card:hover{
+
+    transform:translateY(-6px);
+}
+
+.summary-card svg{
+
+    font-size:40px;
+
+    margin-bottom:15px;
+}
+
+.summary-card h3{
+
+    font-size:36px;
+
+    margin-bottom:10px;
+}
+
+.summary-card p{
+
+    font-size:16px;
+}
+
+/* ================= Buttons ================= */
+
+.profile-buttons{
+
+    display:flex;
+    justify-content:center;
+
+    gap:20px;
+
+    padding:35px;
+}
+
+.edit-btn,
+.password-btn{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:15px 30px;
+
+    border-radius:10px;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.edit-btn{
+
+    background:#1565ff;
+}
+
+.password-btn{
+
+    background:#ff9800;
+}
+
+.edit-btn:hover{
+
+    background:#0d47a1;
+}
+
+.password-btn:hover{
+
+    background:#ef6c00;
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:992px){
+
+.profile-container{
+
+    margin-left:0;
+
+    padding:20px;
+}
+
+.profile-grid{
+
+    grid-template-columns:1fr;
+}
+
+.summary-grid{
+
+    grid-template-columns:1fr;
+}
+
+.profile-buttons{
+
+    flex-direction:column;
+}
+
+.edit-btn,
+.password-btn{
+
+    width:100%;
+    justify-content:center;
+}
+
+.profile-header{
+
+    padding:30px;
+}
+
+.profile-image,
+.default-profile{
+
+    width:130px;
+    height:130px;
+}
+
+.profile-image-wrapper{
+
+    width:130px;
+    height:130px;
+}
+
+.default-profile svg{
+
+    font-size:55px;
+}
+
+.profile-header h1{
+
+    font-size:28px;
+}
+
+.profile-section h2{
+
+    font-size:24px;
+}
+
+}

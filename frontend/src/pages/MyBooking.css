@@ -1,0 +1,99 @@
+.my-bookings-container {
+    margin-left: 270px;
+    padding: 100px 30px 30px;
+    min-height: 100vh;
+    background: #f5f7fb;
+}
+
+.my-bookings-container h1 {
+    font-size: 32px;
+    color: #0f172a;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.my-bookings-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.my-bookings-container thead {
+    background: #1565c0;
+    color: white;
+}
+
+.my-bookings-container th {
+    padding: 18px 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.my-bookings-container td {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 15px;
+    color: #333;
+}
+
+.my-bookings-container tbody tr {
+    transition: 0.3s;
+}
+
+.my-bookings-container tbody tr:hover {
+    background: #f1f7ff;
+}
+
+.my-bookings-container tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.my-bookings-container td:first-child {
+    color: #1565c0;
+    font-weight: bold;
+}
+
+.my-bookings-container td:last-child {
+    color: #0b8f3d;
+    font-weight: bold;
+}
+
+.no-booking {
+    text-align: center;
+    font-size: 18px;
+    padding: 25px;
+    color: #777;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+
+    .my-bookings-container {
+        margin-left: 0;
+        padding: 90px 15px 20px;
+        overflow-x: auto;
+    }
+
+    .my-bookings-container table {
+        min-width: 900px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .my-bookings-container h1 {
+        font-size: 24px;
+    }
+
+    .my-bookings-container th,
+    .my-bookings-container td {
+        padding: 12px;
+        font-size: 14px;
+    }
+}

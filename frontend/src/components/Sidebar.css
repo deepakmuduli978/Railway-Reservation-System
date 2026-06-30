@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+.sidebar{
+    position:fixed;
+    top:0;
+    left:-300px;
+    width:290px;
+    height:100vh;
+
+    background:linear-gradient(180deg,#07244d,#03162e);
+
+    transition:.4s;
+    z-index:1000;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    overflow-y:auto;
+}
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    padding:30px 25px;
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.logo-icon{
+
+    font-size:35px;
+    color:#4da6ff;
+}
+
+.logo h2{
+    color:white;
+    font-size:28px;
+    font-weight:700;
+}
+
+.menu{
+
+    list-style:none;
+
+    padding:20px;
+}
+
+.menu li{
+
+    margin:8px 0;
+}
+
+.menu li a{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    color:#d9e4f5;
+
+    text-decoration:none;
+
+    padding:15px 18px;
+
+    border-radius:12px;
+
+    transition:.3s;
+    font-size:17px;
+}
+
+.menu li a:hover{
+
+    background:#1577ff;
+    color:white;
+
+    transform:translateX(5px);
+}
+
+.menu li a.active{
+
+    background:#1577ff;
+    color:white;
+}
+
+.menu svg{
+
+    font-size:20px;
+}
+
+.bottom{
+
+       margin-top:auto;
+    padding:20px;
+    border-top:1px solid rgba(255,255,255,.15);}
+
+.user{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    margin-bottom:20px;
+}
+
+.avatar{
+
+    width:55px;
+    height:55px;
+
+    border-radius:50%;
+
+    background:#1577ff;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:22px;
+    font-weight:bold;
+}
+
+.user h4{
+
+    font-size:18px;
+}
+
+.user p{
+
+    color:#aaa;
+    font-size:14px;
+}
+
+.logout{
+
+    width:100%;
+    height:50px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#ff3b3b;
+
+    color:white;
+
+    font-size:17px;
+    font-weight:600;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.logout:hover{
+
+    background:#d91f1f;
+}
+.sidebar.active {
+  left: 0;
+}
+.menu-btn {
+  font-size: 28px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.close-btn{
+    position:absolute;
+    right:15px;
+    top:15px;
+
+    font-size:28px;
+
+    border:none;
+    background:none;
+
+    color:white;
+    cursor:pointer;
+}
+@media(max-width:768px){
+
+.sidebar{
+
+    width:80px;
+}
+
+.logo h2,
+.menu li a span,
+.user,
+.logout{
+
+    display:none;
+}
+
+.menu li a{
+
+    justify-content:center;
+}
+}
